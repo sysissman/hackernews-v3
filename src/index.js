@@ -10,7 +10,7 @@ import App from './components/App'
 
 import { ApolloProvider } from 'react-apollo'
 
-import { ApolloClient } from 'aponllo-client'
+import { ApolloClient } from 'apollo-client'
 
 import { createHttpLink } from 'apollo-link-http'
 
