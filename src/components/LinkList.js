@@ -16,6 +16,7 @@ export const FEED_QUERY = gql`
         id
         url
         description
+        tag
         postedBy {
           id
           name
