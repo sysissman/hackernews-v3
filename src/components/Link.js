@@ -51,18 +51,18 @@ class Link extends Component {
           <div>
           <a href={this.props.link.url} target="_blank">{this.props.link.description}</a>
           </div>
-          {/* <div className="f6 lh-copy gray">
+          <div className="f6 lh-copy gray">
             {this.props.link.votes.length} votes | by{' '}
             {this.props.link.postedBy
               ? this.props.link.postedBy.name
               : 'Unknown'}{' '}
             {timeDifferenceForDate(this.props.link.createdAt)}  {' '}
-  below ternary operator check if any votes, shows last voter 
+  {/*below ternary operator check if any votes, shows last voter */}
             {this.props.link.votes[0] 
               ? ' ____ vote ids: first '+this.props.link.votes[0].id + 
                                 ' last '+this.props.link.votes[this.props.link.votes.length-1].id
               : ' '}
-          </div> */}
+          </div> 
         </div>
       </div>
     )

@@ -21,6 +21,7 @@ class App extends Component {
             <Route exact path='/top' component={LinkList} />
             <Route exact path='/new/:page' component={LinkList} />
             <Route exact path='/hi' component={Hi} />
+            <Route exact path='/filterlist:page' component={FilterList} />
           </Switch>
         </div>
       </div>
