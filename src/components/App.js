@@ -6,6 +6,7 @@ import CreateLink from './CreateLink'
 import Login from './Login'
 import Search from './Search'
 import Hi from './Hi'
+import FilterList from './FilterList'
 
 class App extends Component {
   render() {
@@ -21,7 +22,7 @@ class App extends Component {
             <Route exact path='/top' component={LinkList} />
             <Route exact path='/new/:page' component={LinkList} />
             <Route exact path='/hi' component={Hi} />
-            <Route exact path='/filterlist:page' component={FilterList} />
+            <Route exact path='/filterlist' component={FilterList} />
           </Switch>
         </div>
       </div>

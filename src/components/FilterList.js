@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from './Link'
+import Link2 from './Link2'
 import { useQuery } from 'react-apollo'
 import { useHistory } from 'react-router';
 import gql from 'graphql-tag'
@@ -53,7 +53,7 @@ const getQueryVariables = (isNewPage, page) => {
   return { take, skip, orderBy };
 };
 
-const filterlist = () => {
+const FitlerList = () => {
   const history = useHistory();
   const isNewPage = history.location.pathname.includes(
     'new'
@@ -84,7 +84,7 @@ const filterlist = () => {
         <>
           {getLinksToRender(isNewPage, data).map(
             (link, index) => (
-              <Link
+              <Link2
                 key={link.id}
                 link={link}
                 index={index + pageIndex}
@@ -96,7 +96,7 @@ const filterlist = () => {
               <div
                 className="pointer mr2"
                 onClick={() => {
-                  if (page > 1) { 
+                  if (page > 1) {
                     history.push(`/new/${page - 1}`);
                   }
                 }}
@@ -125,4 +125,4 @@ const filterlist = () => {
   );
 };
 
-export default fitlerlist;
+export default FitlerList;
